@@ -10,6 +10,7 @@
     "@types/node": "^12.20.24",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
+    "axios": "^0.21.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -17,7 +18,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "BROWSER='google-chrome-stable' react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
