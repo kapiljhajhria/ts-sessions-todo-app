@@ -92,10 +92,12 @@ class TodoService extends TodoGenericService {
 
   getTodo(): ITodoItem[] {
     // first check cache, if cache is empty then check local storage
+    let todoList: ITodoItem[] = [];
     for (let service of this.services) {
-      const todoList = service.getTodo();
+      todoList = service.getTodo();
       break;
     }
+    return todoList;
   }
   saveTodo(todo: ITodoItem): void {
     throw new Error("Method not implemented.");
